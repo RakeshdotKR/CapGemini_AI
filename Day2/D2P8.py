@@ -33,7 +33,7 @@ d.update(w=4)  #keyword form
 
 left = {"a": 1,"b":2}
 right = {"b": 10,"c":20}
-print(left|right)
+# print(left|right)
 
 # unpacking
 print({**left, **right})                  # output: {'a': 1, 'b': 20, 'c': 3}
@@ -43,15 +43,16 @@ defaults = {"model": "gpt-4o-mini", "temp": 0.2, "stream": True}
 file_cfg = {"temp": 0.7}
 cli_cfg  = {"model": "gpt-4o"}
 effective = {**defaults, **file_cfg, **cli_cfg}
-print(effective)                          # output: {'model': 'gpt-4o', 'temp': 0.7, 'stream': True}
+# print(effective)                          # output: {'model': 'gpt-4o', 'temp': 0.7, 'stream': True}
+# print(defaults)
 
 # removal 
 d2 = {"a": 1, "b": 2, "c": 3}
-print(d2.pop("b"))                       
-print(d2.pop("zz", "fallback"))         
+# print(d2.pop("b"))                       
+# print(d2.pop("zz", "fallback"))         
 # d2.pop("zz")                         
 del d2["a"]                              
-print(d2)                               
+# print(d2)                               
 
 d3 = {"k": 1, "m": 2}
 print(d3.popitem())                     
