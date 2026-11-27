@@ -14,7 +14,7 @@ def pair(a:int,b:int)-> tuple[int,str]:
 def maybe(x:int | None)-> int:
     return x if x is not None else 0
 
-print(repr(greet("Hi",2))) #
-print(process([1,2,3]))
+# print(repr(greet("Hi",2))) 
+# print(process([1,2,3]))
 # print(pair(1,"a"))
-# print(maybe(None), type(maybe("5")))
+print(maybe(None), type(maybe("5")))
